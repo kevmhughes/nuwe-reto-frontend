@@ -4,7 +4,7 @@
 Build and style 3-step login forms using React. 
 
 # See Live app here:
-kevmhughes.github.io/nuwe-reto-frontend/
+https://kevmhughes.github.io/nuwe-reto-frontend/
 
 # Tech Stack
 * React 
