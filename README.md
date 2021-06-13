@@ -1,7 +1,7 @@
 # Nuwe Reto Frontend
 
 ### Objective:
-Build and style 3-step login forms using React. 
+Build and style a 4-step registration form using React. 
 
 # See Live app here:
 https://kevmhughes.github.io/nuwe-reto-frontend/
