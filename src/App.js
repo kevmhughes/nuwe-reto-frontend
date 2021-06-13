@@ -1,11 +1,16 @@
+/* eslint-disable no-undef */
+import React, { Component } from 'react';
 import './App.css';
+import { Main } from './components/main';
 
-function App() {
-  return (
-    <div className="App">
-      Welcome to the world!
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Main />
+      </div>
+    );
+  }
 }
 
 export default App;
