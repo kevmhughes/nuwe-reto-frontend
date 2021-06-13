@@ -27,6 +27,10 @@ Solo he pedido dedicar unas horas a la hackathon debido a compromisos personales
 * state management
 * localStorage managment
 
+----
+----
+----
+
 # Reto frontend
 
 Nuestro equipo de front-end está desarrollando un sistema SaaS para un cliente dónde puede haber tanto usuarios como empresas.
