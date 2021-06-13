@@ -1,7 +1,7 @@
 # Nuwe Reto Frontend
 
 ### Objective:
-Build and style login forms using React. 
+Build and style 3-step login forms using React. 
 
 # See Live app here:
 kevmhughes.github.io/nuwe-reto-frontend/
