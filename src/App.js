@@ -1,3 +1,6 @@
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
 import './App.css';
