@@ -29,6 +29,14 @@
   display: flex;
   align-items: center;
   margin-top: 35px;
+  border-color: #408439;
+}
+
+.step-one-button:hover {
+  -webkit-box-shadow: 5px 7px 17px 5px rgba(0,0,0,1); 
+  box-shadow: 5px 7px 17px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  border-color: white
 }
 
 .step-one-star {
@@ -53,31 +61,11 @@
 .step-one-text-two {
   color: grey;
   font-size: 15px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .button-right {
   width: 100%;
-}
-
-.panel-left {
-  width: 40vw; 
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../assets/images/Background.png');
-}
-
-@media (max-width: 720px) {
-  .panel-left {
-    display: none;
-  }
-}
-
-.panel-left-text {
-  width: 80%;
-  color: white;
 }
 
 .panel-right-desktop {
@@ -98,6 +86,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 20%;
+  text-align: left;
 }
 
 @media (max-width: 720px) {
@@ -115,4 +104,19 @@
   margin-top: 30px;
   width: 40vw;
   justify-content: flex-end;
+}
+
+.initiate-link {
+color: #408439;
+font-size: 15px;
+text-decoration: none;
+}
+
+.initiate-link:hover {
+  color: #274f22;
+}
+
+.awesome-arrow {
+  color: #408439;
+  font-size: 15px;
 }

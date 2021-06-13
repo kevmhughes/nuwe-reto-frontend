@@ -11,6 +11,7 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { SidePanel } from './side-panel';
 import './step-two.css';
 
 export class StepTwo extends Component {
@@ -30,13 +31,16 @@ export class StepTwo extends Component {
       } = this.props;
       return (
         <div className="step-two-view">
+          <SidePanel />
           <Row className="justify-content">
-            <a onClick={this.back}>
-              <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
-            </a>
             <Row>
+              <Col>
+                <a onClick={this.back}>
+                  <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
+                </a>
+              </Col>
               <Col className="info-top">
-                <p>Paso 01/03</p>
+                <p style={{ marginBottom: 0 }}>Paso 01/03</p>
                 <p>Personal Info.</p>
                 <br />
               </Col>

@@ -13,7 +13,8 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import './step-four.css';
+import { SidePanel } from './side-panel';
+import './step-two.css';
 
 export class StepFour extends Component {
     continue = (e) => {
@@ -31,13 +32,16 @@ export class StepFour extends Component {
 
       return (
         <div className="step-two-view">
+          <SidePanel />
           <Row className="justify-content">
-            <a onClick={this.back}>
-              <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
-            </a>
             <Row>
+              <Col>
+                <a onClick={this.back}>
+                  <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
+                </a>
+              </Col>
               <Col className="info-top">
-                <p>Paso 03/03</p>
+                <p style={{ marginBottom: 0 }}>Paso 03/03</p>
                 <p>Verficación por tarjeta</p>
                 <br />
               </Col>
@@ -46,7 +50,6 @@ export class StepFour extends Component {
               <Col style={{ width: '250px' }}>
                 <h1>Verfica tu perfil</h1>
                 <br />
-                // eslint-disable-next-line max-len
                 <p>Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>

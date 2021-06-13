@@ -1,7 +1,15 @@
 .justify-content {
     border-radius: 5px;
-    padding: 45px;
+    width: 40vw;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 720px) {
+  .justify-content {
+    width: 85%;
+  }
 }
 
 .step-two-input {
@@ -26,7 +34,7 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
-  background-color: green;
+  background-color: #408439;
 }
 
 .info-top{
@@ -35,4 +43,8 @@
   align-content: flex-end;
   text-align: right;
   padding: 0;
+}
+
+.step-two-view {
+  display: flex;
 }

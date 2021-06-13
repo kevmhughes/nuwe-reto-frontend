@@ -12,7 +12,8 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import './step-three.css';
+import { SidePanel } from './side-panel';
+import './step-two.css';
 
 export class StepThree extends Component {
     continue = (e) => {
@@ -32,13 +33,16 @@ export class StepThree extends Component {
 
       return (
         <div className="step-two-view">
+          <SidePanel />
           <Row className="justify-content">
-            <a onClick={this.back}>
-              <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
-            </a>
             <Row>
+              <Col>
+                <a onClick={this.back}>
+                  <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
+                </a>
+              </Col>
               <Col className="info-top">
-                <p>Paso 02/03</p>
+                <p style={{ marginBottom: 0 }}>Paso 02/03</p>
                 <p>Localización</p>
                 <br />
               </Col>

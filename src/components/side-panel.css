@@ -1,0 +1,31 @@
+.awesome-icon {
+    font-size: 30px;
+    text-align: left;
+    width: 80%;
+    color: #274f22;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .panel-left {
+    width: 40vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(64, 132, 57, 0.8), rgba(64, 132, 57, 0.8)),
+        url('../assets/images/Background.png');
+  }
+
+  @media (max-width: 720px) {
+    .panel-left {
+      display: none;
+    }
+  }
+  
+  .panel-left-text {
+    width: 80%;
+    color: white;
+    text-align: left;
+  }

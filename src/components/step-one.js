@@ -1,10 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-use-before-define */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import image from '../assets/images/Background.png';
+import { SidePanel } from './side-panel';
 import './step-one.css';
 
 export class StepOne extends Component {
@@ -16,10 +19,7 @@ export class StepOne extends Component {
     render() {
       return (
         <div className="flex-container">
-          <div className="panel-left" style={{ backgroundImage: `url(${image})` }}>
-            <div />
-            <p className="panel-left-text">Nuwe es la plataforma que convierte el desarollo professional, la busqueda de trabajo y las conexiones de personas y empresas en un juego. Haciendo que puedas centrarte en lo que te gusta, programar, diseñar, crear, planear...</p>
-          </div>
+          <SidePanel />
           <div className="panel-right">
             <h1 className="title">¡Únete a la comunidad!</h1>
             <p className="step-one-text">Para empezar, dinos que cuenta te gustaría abrir.</p>
@@ -47,13 +47,13 @@ export class StepOne extends Component {
             </Button>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
               <p className="step-one-text-two">Ya tienes cuenta?</p>
-              <p style={{ color: 'green', fontSize: '15px' }}>inicia sesión</p>
+              <a className="initiate-link">inicia sesión</a>
             </div>
           </div>
           <div className="panel-right-desktop">
-            <div className="link-right-">
+            <div className="link-right">
               <p className="step-one-text-two">¿Ya tienes cuenta?</p>
-              <p style={{ color: 'green', fontSize: '15px' }}>inicia sesión</p>
+              <a className="initiate-link">inicia sesión</a>
             </div>
             <div className="action-box">
               <h1 id="title">¡Únete a la comunidad!</h1>
@@ -69,6 +69,7 @@ export class StepOne extends Component {
                   <p className="step-one-button-text">Developers</p>
                   <p className="step-one-button-text-two">Cuenta personas para entrar en el mundo dev</p>
                 </div>
+                <div className="awesome-arrow"><FontAwesomeIcon icon={faArrowRight} /></div>
               </Button>
               <Button
                 variant="outline-primary"
@@ -81,6 +82,7 @@ export class StepOne extends Component {
                   <p className="step-one-button-text">Business</p>
                   <p className="step-one-button-text-two">Tienes o perteneces a una compañia</p>
                 </div>
+                <div className="awesome-arrow"><FontAwesomeIcon icon={faArrowRight} /></div>
               </Button>
             </div>
           </div>
