@@ -28,7 +28,7 @@ Solo he pedido dedicar unas horas a la hackathon debido a compromisos personales
 * localStorage managment
 
 ----
-----
+# The Challenge:
 ----
 
 # Reto frontend
