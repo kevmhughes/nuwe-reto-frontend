@@ -23,6 +23,6 @@ Solo he pedido dedicar unas horas a la hackathon debido a compromisos personales
 
 #### Necesito terminar:
 * responsive styling for desktop
-* styling: icons, etc.
+* styling: icons, buttons, etc.
 * state management
 * localStorage managment
