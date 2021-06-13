@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nuwe-reto-frontend/static/css/main.22cfadb7.chunk.css",
-    "main.js": "/nuwe-reto-frontend/static/js/main.6509a7e8.chunk.js",
-    "main.js.map": "/nuwe-reto-frontend/static/js/main.6509a7e8.chunk.js.map",
+    "main.css": "/nuwe-reto-frontend/static/css/main.58be80d3.chunk.css",
+    "main.js": "/nuwe-reto-frontend/static/js/main.ac9c5883.chunk.js",
+    "main.js.map": "/nuwe-reto-frontend/static/js/main.ac9c5883.chunk.js.map",
     "runtime-main.js": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js",
     "runtime-main.js.map": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js.map",
     "static/js/2.7a412e14.chunk.js": "/nuwe-reto-frontend/static/js/2.7a412e14.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.d356d979.chunk.js": "/nuwe-reto-frontend/static/js/3.d356d979.chunk.js",
     "static/js/3.d356d979.chunk.js.map": "/nuwe-reto-frontend/static/js/3.d356d979.chunk.js.map",
     "index.html": "/nuwe-reto-frontend/index.html",
-    "static/css/main.22cfadb7.chunk.css.map": "/nuwe-reto-frontend/static/css/main.22cfadb7.chunk.css.map",
+    "static/css/main.58be80d3.chunk.css.map": "/nuwe-reto-frontend/static/css/main.58be80d3.chunk.css.map",
     "static/js/2.7a412e14.chunk.js.LICENSE.txt": "/nuwe-reto-frontend/static/js/2.7a412e14.chunk.js.LICENSE.txt",
     "static/media/step-one.css": "/nuwe-reto-frontend/static/media/Background.d0f96ff7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0b560f3d.js",
     "static/js/2.7a412e14.chunk.js",
-    "static/css/main.22cfadb7.chunk.css",
-    "static/js/main.6509a7e8.chunk.js"
+    "static/css/main.58be80d3.chunk.css",
+    "static/js/main.ac9c5883.chunk.js"
   ]
 }
