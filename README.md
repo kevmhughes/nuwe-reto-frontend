@@ -19,8 +19,9 @@ kevmhughes.github.io/nuwe-reto-frontend/
 * Github Pages
 
 # Lo que tengo que terminar
-Solo he pedido dedicar unas horas a este hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo. 
-Necesito terminar:
+Solo he pedido dedicar unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo. 
+
+#### Necesito terminar:
 * responsive styling for desktop
 * styling: icons, etc.
 * state management
