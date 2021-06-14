@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nuwe-reto-frontend/static/css/main.631a53a6.chunk.css",
-    "main.js": "/nuwe-reto-frontend/static/js/main.46769d4d.chunk.js",
-    "main.js.map": "/nuwe-reto-frontend/static/js/main.46769d4d.chunk.js.map",
+    "main.js": "/nuwe-reto-frontend/static/js/main.8dd11dae.chunk.js",
+    "main.js.map": "/nuwe-reto-frontend/static/js/main.8dd11dae.chunk.js.map",
     "runtime-main.js": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js",
     "runtime-main.js.map": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js.map",
     "static/js/2.090baf8e.chunk.js": "/nuwe-reto-frontend/static/js/2.090baf8e.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0b560f3d.js",
     "static/js/2.090baf8e.chunk.js",
     "static/css/main.631a53a6.chunk.css",
-    "static/js/main.46769d4d.chunk.js"
+    "static/js/main.8dd11dae.chunk.js"
   ]
 }
