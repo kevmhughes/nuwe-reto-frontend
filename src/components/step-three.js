@@ -11,7 +11,7 @@ import {
   Row, Col, Form, Button,
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faLock } from '@fortawesome/free-solid-svg-icons';
 import { SidePanel } from './side-panel';
 import './step-two.css';
 
@@ -49,15 +49,17 @@ export class StepThree extends Component {
             </Row>
             <Row>
               <Col style={{ width: '250px' }}>
-                <h1>Completa tu perfil</h1>
-                <br />
+                <h3>Completa tu perfil</h3>
                 <p>Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>
 
+            <hr className="horiz-line" />
+
             <Col className="step-two-container">
               <Form>
                 <Form.Group controlId="telephone">
+                  <Form.Label>Número de teléfono</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="telephone"
@@ -69,6 +71,7 @@ export class StepThree extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="address">
+                  <Form.Label>Dirección</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="address"
@@ -80,6 +83,7 @@ export class StepThree extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="country">
+                  <Form.Label>País de residencia</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="country"
@@ -89,7 +93,7 @@ export class StepThree extends Component {
                     onChange={handleChange()}
                   />
                 </Form.Group>
-
+                <br />
                 <Button
                   className="step-two-button"
                   variant="primary"
@@ -102,6 +106,14 @@ export class StepThree extends Component {
 
               </Form>
             </Col>
+            <div className="step-one-text">
+              <p style={{ textAlign: 'center' }}>
+                {' '}
+                <FontAwesomeIcon icon={faLock} />
+                {' '}
+                Tu información es segura
+              </p>
+            </div>
           </Row>
         </div>
       );

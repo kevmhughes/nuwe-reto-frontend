@@ -54,15 +54,15 @@ export class StepFour extends Component {
             </Row>
             <Row>
               <Col style={{ width: '250px' }}>
-                <h1>Verfica tu perfil</h1>
-                <br />
+                <h3>Verfica tu perfil</h3>
                 <p>Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>
-
+            <hr className="horiz-line" />
             <Col className="step-two-container">
               <Form>
                 <Form.Group controlId="card-number">
+                  <Form.Label>Número de tarjeta</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="card-number"
@@ -74,6 +74,7 @@ export class StepFour extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="secret-number">
+                  <Form.Label>Código secreto</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="secret-number"
@@ -83,7 +84,7 @@ export class StepFour extends Component {
                     onChange={handleChange()}
                   />
                 </Form.Group>
-
+                <br />
                 <Button
                   className="step-two-button"
                   variant="primary"

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-alert */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -53,14 +54,17 @@ export class StepTwo extends Component {
             </Row>
             <Row>
               <Col style={{ width: '250px' }}>
-                <h1>Registra tu cuenta individual</h1>
-                <br />
+                <h3>Registra tu cuenta individual</h3>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>
+
+            <hr className="horiz-line" />
 
             <Col className="step-two-container">
               <Form>
                 <Form.Group controlId="fullname">
+                  <Form.Label>Nombre completo*</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="username"
@@ -72,6 +76,7 @@ export class StepTwo extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="email">
+                  <Form.Label>Email*</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="email"
@@ -83,6 +88,7 @@ export class StepTwo extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="password">
+                  <Form.Label>Password*</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="password"
