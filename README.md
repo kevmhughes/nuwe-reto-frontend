@@ -24,8 +24,10 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo.
 
 
-#### Necesito terminar:
+#### Necesito terminar/incorporar:
 * inputs/input validation
+* LocalStorage.setItem/localStorage.getItem
+* JSDoc
 
 ----
 #### See the Hackathon challenge that was set on 12/06/2021
