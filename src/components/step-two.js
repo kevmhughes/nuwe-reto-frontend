@@ -47,7 +47,7 @@ export class StepTwo extends Component {
               </Col>
               <Col className="info-top">
                 <p style={{ marginBottom: 0 }}>Paso 01/03</p>
-                <p>Personal Info.</p>
+                <p>Personal Info</p>
                 <br />
               </Col>
             </Row>

@@ -28,7 +28,7 @@ export class StepOne extends Component {
               onClick={this.continue}
               className="step-one-button"
             >
-              <div className="step-one-star">star</div>
+              <div className="step-one-star"><FontAwesomeIcon icon={faSquare} className="square" /></div>
               <div className="button-right">
                 <p className="step-one-button-text">Developers</p>
                 <p className="step-one-button-text-two">Cuenta personas para entrar en el mundo dev</p>
@@ -39,7 +39,7 @@ export class StepOne extends Component {
               onClick={this.continue}
               className="step-one-button"
             >
-              <div className="step-one-star">star</div>
+              <div className="step-one-star"><FontAwesomeIcon icon={faSquare} className="square" /></div>
               <div className="button-right">
                 <p className="step-one-button-text">Business</p>
                 <p className="step-one-button-text-two">Tienes o perteneces a una compañia</p>

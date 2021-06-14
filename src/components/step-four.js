@@ -48,7 +48,7 @@ export class StepFour extends Component {
               </Col>
               <Col className="info-top">
                 <p style={{ marginBottom: 0 }}>Paso 03/03</p>
-                <p>Verficación por tarjeta</p>
+                <p className="tarjeta-text">Verficación por tarjeta</p>
                 <br />
               </Col>
             </Row>
