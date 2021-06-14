@@ -118,11 +118,48 @@ text-decoration: none;
 }
 
 .awesome-arrow {
+  color: white;
+  font-size: 15px;
+  width: 20%;
+}
+
+.awesome-arrow-two {
   color: #408439;
   font-size: 15px;
+  width: 20%;
 }
 
 .square {
   font-size: 30px;
-  color: #408439;
+  color: white;
+  border-color: #408439;
+  border-style: solid;
+  border-width: thin;
 }
+
+.square-two {
+  font-size: 30px;
+  color: #408439;
+  border-color: #408439;
+  background-color: #408439;
+  border-style: solid;
+  border-width: thin;
+}
+
+.briefcase {
+  position: relative;
+  font-size: 15px;
+  left: -21px;
+  bottom: 5px;
+  color: white;
+}
+
+.user {
+  position: relative;
+  left: -20.5px;
+  bottom: 5px;
+  color: white;
+}
+
+
+
