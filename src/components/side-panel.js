@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faQuoteLeft, faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/images/icon.png';
 import './side-panel.css';
 
 export class SidePanel extends Component {
@@ -20,6 +21,9 @@ export class SidePanel extends Component {
       return (
         <div className="flex-container">
           <div className="panel-left">
+            <div className="logo">
+              <img src={logo} alt="Oasis logo" style={{ height: '40px', color: 'green' }} />
+            </div>
             <div className="awesome-icon">
               <FontAwesomeIcon icon={faQuoteLeft} />
             </div>
