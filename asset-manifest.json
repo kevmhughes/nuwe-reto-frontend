@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/nuwe-reto-frontend/static/css/main.7a7a03e1.chunk.css",
-    "main.js": "/nuwe-reto-frontend/static/js/main.868dd608.chunk.js",
-    "main.js.map": "/nuwe-reto-frontend/static/js/main.868dd608.chunk.js.map",
-    "runtime-main.js": "/nuwe-reto-frontend/static/js/runtime-main.99f3714b.js",
-    "runtime-main.js.map": "/nuwe-reto-frontend/static/js/runtime-main.99f3714b.js.map",
-    "static/js/2.06ba4564.chunk.js": "/nuwe-reto-frontend/static/js/2.06ba4564.chunk.js",
-    "static/js/2.06ba4564.chunk.js.map": "/nuwe-reto-frontend/static/js/2.06ba4564.chunk.js.map",
-    "static/js/3.30975b0b.chunk.js": "/nuwe-reto-frontend/static/js/3.30975b0b.chunk.js",
-    "static/js/3.30975b0b.chunk.js.map": "/nuwe-reto-frontend/static/js/3.30975b0b.chunk.js.map",
+    "main.css": "/nuwe-reto-frontend/static/css/main.631a53a6.chunk.css",
+    "main.js": "/nuwe-reto-frontend/static/js/main.46769d4d.chunk.js",
+    "main.js.map": "/nuwe-reto-frontend/static/js/main.46769d4d.chunk.js.map",
+    "runtime-main.js": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js",
+    "runtime-main.js.map": "/nuwe-reto-frontend/static/js/runtime-main.0b560f3d.js.map",
+    "static/js/2.090baf8e.chunk.js": "/nuwe-reto-frontend/static/js/2.090baf8e.chunk.js",
+    "static/js/2.090baf8e.chunk.js.map": "/nuwe-reto-frontend/static/js/2.090baf8e.chunk.js.map",
+    "static/js/3.d356d979.chunk.js": "/nuwe-reto-frontend/static/js/3.d356d979.chunk.js",
+    "static/js/3.d356d979.chunk.js.map": "/nuwe-reto-frontend/static/js/3.d356d979.chunk.js.map",
     "index.html": "/nuwe-reto-frontend/index.html",
-    "static/css/main.7a7a03e1.chunk.css.map": "/nuwe-reto-frontend/static/css/main.7a7a03e1.chunk.css.map",
-    "static/js/2.06ba4564.chunk.js.LICENSE.txt": "/nuwe-reto-frontend/static/js/2.06ba4564.chunk.js.LICENSE.txt",
+    "static/css/main.631a53a6.chunk.css.map": "/nuwe-reto-frontend/static/css/main.631a53a6.chunk.css.map",
+    "static/js/2.090baf8e.chunk.js.LICENSE.txt": "/nuwe-reto-frontend/static/js/2.090baf8e.chunk.js.LICENSE.txt",
     "static/media/side-panel.css": "/nuwe-reto-frontend/static/media/Background.d0f96ff7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.99f3714b.js",
-    "static/js/2.06ba4564.chunk.js",
-    "static/css/main.7a7a03e1.chunk.css",
-    "static/js/main.868dd608.chunk.js"
+    "static/js/runtime-main.0b560f3d.js",
+    "static/js/2.090baf8e.chunk.js",
+    "static/css/main.631a53a6.chunk.css",
+    "static/js/main.46769d4d.chunk.js"
   ]
 }
