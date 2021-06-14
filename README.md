@@ -1,6 +1,6 @@
 # Nuwe Hackathon - 12/06/2021
 
-## Reto Frontend 
+## My Submission for the Frontend Challenge:
 
 ### Objective:
 Use React to build and style the UI for a 4-step registration form with server side form validation. 
