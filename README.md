@@ -21,11 +21,11 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 * Github Pages
 
 #### Lo que tengo que terminar
-Solo he podido dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo.
+Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo.
 
 
 #### Necesito terminar:
-* input validation
+* inputs/input validation
 
 ----
 ----
