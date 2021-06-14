@@ -24,7 +24,7 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 Solo he podido dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo. 
 
 #### Necesito terminar:
-* una parte del styling: icons, buttons, etc.
+* input validation
 * state management
 * localStorage managment
 
