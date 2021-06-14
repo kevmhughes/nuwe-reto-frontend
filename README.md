@@ -5,23 +5,24 @@
 ### Objective:
 Use React to build and style the UI for a 4-step registration form with server side form validation. 
 
-### Ver Live App Aquí:
+### See Live App Here:
 https://kevmhughes.github.io/nuwe-reto-frontend/
 
 ### Tech Stack
 * React 
 
-### Entorno de desarrollo
+### Development Environment
 * Node
 
-### Librería
-* Boostrap
+### Library
+* Bootstrap
 
 ### Deployment
 * Github Pages
 
 #### Lo que tengo que terminar
-Solo he podido dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo. 
+Solo he podido dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo.
+
 
 #### Necesito terminar:
 * input validation
