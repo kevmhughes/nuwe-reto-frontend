@@ -1,24 +1,24 @@
-# Nuwe Hackathon Frontend challenge
+# Nuwe Hackathon Reto Frontend 
 
 ### Objective:
 Use React to build and style the UI for a 4-step registration form with server side form validation. 
 
-# See Live app here:
+# Ver Live App Aquí:
 https://kevmhughes.github.io/nuwe-reto-frontend/
 
 # Tech Stack
 * React 
 
-# Development Environment
+# Entorno de desarrollo
 * Node
 
-# Library
+# Librería
 * Boostrap
 
 # Deployment
 * Github Pages
 
-# Lo que tengo que terminar
+#### Lo que tengo que terminar
 Solo he podido dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no he podido terminar el reto por completo. 
 
 #### Necesito terminar:
@@ -26,6 +26,8 @@ Solo he podido dedicarle unas horas a la hackathon debido a compromisos personal
 * state management
 * localStorage managment
 
+----
+----
 ----
 # The Hackathon Challenge:
 
