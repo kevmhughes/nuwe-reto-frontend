@@ -99,7 +99,7 @@ export class StepTwo extends Component {
                 <br />
                 <br />
                 <Button
-                  className="step-two-button"
+                  className="google-button"
                   variant="primary"
                   onClick={this.continue}
                 >

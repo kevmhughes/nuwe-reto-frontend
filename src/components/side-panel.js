@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faQuoteLeft,
+  faQuoteLeft, faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import './side-panel.css';
 
@@ -24,6 +24,9 @@ export class SidePanel extends Component {
               <FontAwesomeIcon icon={faQuoteLeft} />
             </div>
             <p className="panel-left-text">Nuwe es la plataforma que convierte el desarollo professional, la busqueda de trabajo y las conexiones de personas y empresas en un juego. Haciendo que puedas centrarte en lo que te gusta, programar, diseñar, crear, planear...</p>
+            <div className="awesome-chevron">
+              <FontAwesomeIcon className="awesome-rotate" icon={faChevronDown} />
+            </div>
           </div>
         </div>
       );

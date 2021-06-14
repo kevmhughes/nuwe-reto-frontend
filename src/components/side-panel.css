@@ -29,3 +29,16 @@
     color: white;
     text-align: left;
   }
+
+  .awesome-chevron {
+    width: 80%;
+    text-align: right;
+    font-size: 40px;
+    color: white;
+  }
+
+  .awesome-rotate {
+    -webkit-transform: rotate(315deg);  /* to support Safari and Android browser */
+    -ms-transform: rotate(315deg);      /* to support IE 9 */
+    transform: rotate(315deg);
+  }

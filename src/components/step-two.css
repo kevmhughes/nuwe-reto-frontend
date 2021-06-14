@@ -1,9 +1,11 @@
 .justify-content {
     border-radius: 5px;
     width: 40vw;
+    max-width: 500px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
 }
 
 @media (max-width: 720px) {
@@ -14,14 +16,26 @@
 
 .step-two-input {
   outline: 0;
-  background: #f2f2f2;
+  background: white;
   width: 100%;
-  border: 0;
   margin: 0 0 15px;
   height: 50px;
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+.step-two-input:focus {
+  border-color: #408439;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.step-two-input:hover {
+  box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
 }
 
 .step-two-button {
@@ -35,6 +49,36 @@
   transition: all 0.3 ease;
   cursor: pointer;
   background-color: #408439;
+}
+
+.step-two-button:hover {
+  box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  background-color: #54874f;
+  border-color: lightgray;
+}
+
+.google-button {
+  outline: 0;
+  width: 100%;
+  border-color: lightgrey;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background-color: white;
+  color: black
+}
+
+.google-button:hover {
+  box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.35);
+  background-color: white;
+  border-color: lightgray;
+  color: black;
 }
 
 .info-top{
