@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -12,7 +13,7 @@ import {
   Row, Col, Form, Button,
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faLock } from '@fortawesome/free-solid-svg-icons';
 import { SidePanel } from './side-panel';
 import './step-two.css';
 
@@ -20,6 +21,11 @@ export class StepFour extends Component {
     continue = (e) => {
       e.preventDefault();
       this.props.nextStep();
+    }
+
+    vamosParaNuwe = (e) => {
+      e.preventDefault();
+      alert('Te has registrado correctamente');
     }
 
     back = (e) => {
@@ -37,7 +43,7 @@ export class StepFour extends Component {
             <Row>
               <Col>
                 <a onClick={this.back}>
-                  <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
+                  <FontAwesomeIcon icon={faChevronLeft} />
                 </a>
               </Col>
               <Col className="info-top">
@@ -81,6 +87,7 @@ export class StepFour extends Component {
                 <Button
                   className="step-two-button"
                   variant="primary"
+                  onClick={this.vamosParaNuwe}
                 >
                   Guardar y continuar
                 </Button>
@@ -90,7 +97,12 @@ export class StepFour extends Component {
               </Form>
             </Col>
             <div className="step-one-text">
-              <p style={{ textAlign: 'center' }}>Tu información es segura</p>
+              <p style={{ textAlign: 'center' }}>
+                {' '}
+                <FontAwesomeIcon icon={faLock} />
+                {' '}
+                Tu información es segura
+              </p>
             </div>
           </Row>
         </div>

@@ -4,7 +4,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-use-before-define */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faSquare } from '@fortawesome/free-solid-svg-icons';
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import { SidePanel } from './side-panel';
@@ -64,7 +64,7 @@ export class StepOne extends Component {
                 className="step-one-button"
                 style={{ height: '80px' }}
               >
-                <div className="step-one-star">star</div>
+                <div className="step-one-star"><FontAwesomeIcon icon={faSquare} className="square" /></div>
                 <div className="button-right">
                   <p className="step-one-button-text">Developers</p>
                   <p className="step-one-button-text-two">Cuenta personas para entrar en el mundo dev</p>
@@ -77,7 +77,9 @@ export class StepOne extends Component {
                 className="step-one-button"
                 style={{ height: '80px' }}
               >
-                <div className="step-one-star">star</div>
+                <div className="step-one-star">
+                  <FontAwesomeIcon icon={faSquare} className="square" />
+                </div>
                 <div className="button-right">
                   <p className="step-one-button-text">Business</p>
                   <p className="step-one-button-text-two">Tienes o perteneces a una compañia</p>

@@ -38,7 +38,7 @@ export class StepThree extends Component {
             <Row>
               <Col>
                 <a onClick={this.back}>
-                  <FontAwesomeIcon icon={faChevronLeft} className="mr-2 mr-sm-4 go-back" />
+                  <FontAwesomeIcon icon={faChevronLeft} />
                 </a>
               </Col>
               <Col className="info-top">
