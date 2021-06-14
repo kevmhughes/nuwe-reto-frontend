@@ -34,7 +34,7 @@ export class StepFour extends Component {
     }
 
     render() {
-      const { cardNumber, secretCode, handleChange } = this.props;
+      const { values, handleChange } = this.props;
 
       return (
         <div className="step-two-view">
@@ -55,7 +55,7 @@ export class StepFour extends Component {
             <Row>
               <Col style={{ width: '250px' }}>
                 <h3>Verfica tu perfil</h3>
-                <p>Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>
             <hr className="horiz-line" />
@@ -68,8 +68,8 @@ export class StepFour extends Component {
                     type="card-number"
                     size="sm"
                     placeholder="Introduzca número de tarjeta"
-                    value={cardNumber}
-                    onChange={handleChange()}
+                    value={values.cardNumber}
+                    onChange={handleChange('cardNumber')}
                   />
                 </Form.Group>
 
@@ -80,8 +80,8 @@ export class StepFour extends Component {
                     type="secret-number"
                     size="sm"
                     placeholder="Introduzca el codigo secreto"
-                    value={secretCode}
-                    onChange={handleChange()}
+                    value={values.secretCode}
+                    onChange={handleChange('secretCode')}
                   />
                 </Form.Group>
                 <br />

@@ -22,7 +22,7 @@ export class StepTwo extends Component {
       this.props.nextStep();
     }
 
-    vamosParaNuwe = (e) => {
+    goToNuwe = (e) => {
       e.preventDefault();
       alert('Te has registrado correctamente');
     }
@@ -33,9 +33,7 @@ export class StepTwo extends Component {
     }
 
     render() {
-      const {
-        fullName, password, email, handleChange,
-      } = this.props;
+      const { values, handleChange } = this.props;
       return (
         <div className="step-two-view">
           <SidePanel />
@@ -70,8 +68,8 @@ export class StepTwo extends Component {
                     type="username"
                     size="sm"
                     placeholder="Introduzca nombre completo"
-                    value={fullName}
-                    onChange={handleChange()}
+                    value={values.fullName}
+                    onChange={handleChange('fullName')}
                   />
                 </Form.Group>
 
@@ -82,8 +80,8 @@ export class StepTwo extends Component {
                     type="email"
                     size="sm"
                     placeholder="Introduzca el email"
-                    value={email}
-                    onChange={handleChange()}
+                    value={values.email}
+                    onChange={handleChange('email')}
                   />
                 </Form.Group>
 
@@ -94,8 +92,8 @@ export class StepTwo extends Component {
                     type="password"
                     size="sm"
                     placeholder="Introduzca contraseña"
-                    value={password}
-                    onChange={handleChange()}
+                    value={values.password}
+                    onChange={handleChange('password')}
                   />
                 </Form.Group>
 
@@ -113,7 +111,7 @@ export class StepTwo extends Component {
                 <Button
                   className="google-button"
                   variant="primary"
-                  onClick={this.vamosParaNuwe}
+                  onClick={this.goToNuwe}
                   style={{ display: 'flex' }}
                 >
                   <div style={{ width: '33%' }}>

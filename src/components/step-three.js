@@ -28,7 +28,7 @@ export class StepThree extends Component {
 
     render() {
       const {
-        telephoneNumber, country, address, handleChange,
+        values, handleChange,
       } = this.props;
 
       return (
@@ -50,7 +50,7 @@ export class StepThree extends Component {
             <Row>
               <Col style={{ width: '250px' }}>
                 <h3>Completa tu perfil</h3>
-                <p>Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
               </Col>
             </Row>
 
@@ -65,8 +65,8 @@ export class StepThree extends Component {
                     type="telephone"
                     size="sm"
                     placeholder="Introduzca número de teléfono"
-                    value={telephoneNumber}
-                    onChange={handleChange()}
+                    value={values.telephoneNumber}
+                    onChange={handleChange('telephoneNumber')}
                   />
                 </Form.Group>
 
@@ -77,8 +77,8 @@ export class StepThree extends Component {
                     type="address"
                     size="sm"
                     placeholder="Introduzca la dirección completa"
-                    value={address}
-                    onChange={handleChange()}
+                    value={values.address}
+                    onChange={handleChange('address')}
                   />
                 </Form.Group>
 
@@ -89,8 +89,8 @@ export class StepThree extends Component {
                     type="country"
                     size="sm"
                     placeholder="Seleciona uno"
-                    value={country}
-                    onChange={handleChange()}
+                    value={values.country}
+                    onChange={handleChange('country')}
                   />
                 </Form.Group>
                 <br />
