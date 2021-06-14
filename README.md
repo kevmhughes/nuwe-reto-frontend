@@ -28,11 +28,11 @@ Solo pude dedicarle unas horas a la hackathon debido a compromisos personales du
 * inputs/input validation
 
 ----
-----
+#### See the Hackathon challenge that was set on 12/06/2021
 ----
 # The Hackathon Challenge:
 
-# Reto frontend
+## Reto frontend
 
 Nuestro equipo de front-end está desarrollando un sistema SaaS para un cliente dónde puede haber tanto usuarios como empresas.
 Para poder acceder al SaaS nos han pedido que creemos una pasarela registro como la que se muestra en el siguiente diseño que nos han preparado desde el departamento de UX/UI.
