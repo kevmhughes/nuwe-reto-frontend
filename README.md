@@ -26,8 +26,6 @@ Solo he podido dedicarle unas horas a la hackathon debido a compromisos personal
 
 #### Necesito terminar:
 * input validation
-* state management
-* localStorage managment
 
 ----
 ----
