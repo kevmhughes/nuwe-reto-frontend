@@ -54,7 +54,7 @@ export class StepTwo extends Component {
             <Row>
               <Col style={{ width: '250px' }}>
                 <h3>Registra tu cuenta individual</h3>
-                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información.</p>
               </Col>
             </Row>
 
@@ -68,7 +68,7 @@ export class StepTwo extends Component {
                     className="step-two-input"
                     type="username"
                     size="sm"
-                    placeholder="Introduzca nombre completo"
+                    placeholder="Introduzca el nombre completo"
                     value={values.fullName}
                     onChange={handleChange('fullName')}
                   />
@@ -92,7 +92,7 @@ export class StepTwo extends Component {
                     className="step-two-input"
                     type="password"
                     size="sm"
-                    placeholder="Introduzca contraseña"
+                    placeholder="Introduzca una contraseña"
                     value={values.password}
                     onChange={handleChange('password')}
                   />

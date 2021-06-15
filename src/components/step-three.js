@@ -50,7 +50,7 @@ export class StepThree extends Component {
             <Row>
               <Col style={{ width: '250px' }}>
                 <h3>Completa tu perfil</h3>
-                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información.</p>
               </Col>
             </Row>
 
@@ -64,7 +64,7 @@ export class StepThree extends Component {
                     className="step-two-input"
                     type="telephone"
                     size="sm"
-                    placeholder="Introduzca número de teléfono"
+                    placeholder="Introduzca el número de teléfono"
                     value={values.telephoneNumber}
                     onChange={handleChange('telephoneNumber')}
                   />
@@ -88,7 +88,7 @@ export class StepThree extends Component {
                     className="step-two-input"
                     type="country"
                     size="sm"
-                    placeholder="Seleciona uno"
+                    placeholder="Selecciona uno"
                     value={values.country}
                     onChange={handleChange('country')}
                   />

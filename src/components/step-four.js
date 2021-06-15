@@ -55,7 +55,7 @@ export class StepFour extends Component {
             <Row>
               <Col style={{ width: '250px' }}>
                 <h3>Verfica tu perfil</h3>
-                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información</p>
+                <p className="text-desktop">Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información.</p>
               </Col>
             </Row>
             <hr className="horiz-line" />
@@ -67,7 +67,7 @@ export class StepFour extends Component {
                     className="step-two-input"
                     type="card-number"
                     size="sm"
-                    placeholder="Introduzca número de tarjeta"
+                    placeholder="Introduzca el número de tarjeta"
                     value={values.cardNumber}
                     onChange={handleChange('cardNumber')}
                   />
