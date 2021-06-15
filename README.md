@@ -21,7 +21,7 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 * Github Pages
 
 ## Things to do:
-Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. 
+Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. 
 
 #### Debajo se detalla un desglose de tareas pendientes:
 
