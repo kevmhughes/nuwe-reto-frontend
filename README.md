@@ -24,9 +24,14 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo.
 
 
-#### Necesito terminar/incorporar:
-* inputs/input validation
-* LocalStorage.setItem/localStorage.getItem
+#### Things to do:
+* method to display icons on buttons in mobile view
+* checkbox to accept terms
+* Country picker for country input
+* International code picker with flags for telephone input
+* show/hide password toggle
+* form validation
+* LocalStorage.setItem/localStorage.getItem for form data
 * JSDoc
 
 ----
