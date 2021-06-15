@@ -20,11 +20,9 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 ### Deployment
 * Github Pages
 
-#### Lo que tengo que terminar
-Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo.
-
-
 #### Things to do:
+Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. Debajo se detalla un desglose de tareas pendientes:
+
 * method to display icons on buttons in mobile view
 * checkbox to accept terms
 * Country picker for country input
