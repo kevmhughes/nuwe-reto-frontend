@@ -24,6 +24,9 @@ export class Main extends Component {
       secretCode: '',
     };
 
+    // This was a frontend challenge.
+    // There is no axios method to connect with the backend yet!
+
     // Go to next step
     nextStep = () => {
       const { step } = this.state;

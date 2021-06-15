@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable max-len */
 /* eslint-disable no-alert */
 /* eslint-disable react/jsx-filename-extension */
@@ -86,7 +87,7 @@ export class StepTwo extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="password">
-                  <Form.Label>Password*</Form.Label>
+                  <Form.Label>Contraseña*</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="password"
