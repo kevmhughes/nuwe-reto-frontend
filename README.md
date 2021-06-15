@@ -35,8 +35,6 @@ Solo pude dedicarle unas horas a la hackathon debido a compromisos personales du
 * JSDoc
 
 ----
-#### See the Hackathon challenge that was set on 12/06/2021
-----
 # The Hackathon Challenge:
 
 ## Reto frontend
