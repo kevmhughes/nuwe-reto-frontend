@@ -20,17 +20,20 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 ### Deployment
 * Github Pages
 
-#### Lo que tengo que terminar
-Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo.
+## Things to do:
+Solo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. 
 
+#### Debajo se detalla un desglose de tareas pendientes:
 
-#### Necesito terminar/incorporar:
-* inputs/input validation
-* LocalStorage.setItem/localStorage.getItem
+* method to display icons on buttons in mobile view
+* checkbox to accept terms
+* Country picker for country input
+* International code picker with flags for telephone input
+* show/hide password toggle
+* form validation
+* LocalStorage.setItem/localStorage.getItem for form data
 * JSDoc
 
-----
-#### See the Hackathon challenge that was set on 12/06/2021
 ----
 # The Hackathon Challenge:
 
