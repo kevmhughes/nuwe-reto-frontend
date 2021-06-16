@@ -18,6 +18,14 @@ import { SidePanel } from './side-panel';
 import './step-two.css';
 
 export class StepTwo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      accept: true,
+    };
+    this.checkboxHandler = this.checkboxHandler.bind(this);
+  }
+
     continue = (e) => {
       e.preventDefault();
       this.props.nextStep();
@@ -31,6 +39,12 @@ export class StepTwo extends Component {
     back = (e) => {
       e.preventDefault();
       this.props.prevStep();
+    }
+
+    checkboxHandler() {
+      this.setState((prevState) => ({
+        accept: !prevState.accept,
+      }));
     }
 
     render() {
@@ -75,7 +89,7 @@ export class StepTwo extends Component {
                 </Form.Group>
 
                 <Form.Group controlId="email">
-                  <Form.Label>Email*</Form.Label>
+                  <Form.Label>Correo electrónico*</Form.Label>
                   <Form.Control
                     className="step-two-input"
                     type="email"
@@ -97,13 +111,17 @@ export class StepTwo extends Component {
                     onChange={handleChange('password')}
                   />
                 </Form.Group>
-
-                <p>Acepto los terminos y condiciones</p>
+                <label htmlFor="agree" id="agree">
+                  <input type="checkbox" className="checkbox" id="checkbox" onChange={this.checkboxHandler} />
+                  {' '}
+                  Acepto los terminos y condiciones
+                </label>
 
                 <Button
                   className="step-two-button"
                   variant="primary"
                   onClick={this.continue}
+                  disabled={this.state.accept}
                 >
                   Registrar Cuenta
                 </Button>
@@ -114,6 +132,7 @@ export class StepTwo extends Component {
                   variant="primary"
                   onClick={this.goToNuwe}
                   style={{ display: 'flex' }}
+                  disabled={this.state.accept}
                 >
                   <div style={{ width: '33%' }}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="Google logo" style={{ height: '15px' }} />
