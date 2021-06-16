@@ -3,7 +3,7 @@
 ## My Submission for the Frontend Challenge:
 
 ### Objective:
-Use React to build and style the UI for a 4-step registration form with server side form validation. 
+Use React to build and style the UI for a 4-step registration form with client-side form validation. 
 
 ### See Live App Here:
 https://kevmhughes.github.io/nuwe-reto-frontend/
