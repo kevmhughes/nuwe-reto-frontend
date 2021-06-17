@@ -90,7 +90,7 @@ export class StepFour extends Component {
                   variant="primary"
                   onClick={this.vamosParaNuwe}
                 >
-                  Guardar y continuar
+                  Crear Cuenta
                 </Button>
                 <br />
                 <br />
