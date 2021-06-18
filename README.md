@@ -29,7 +29,6 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 * International code picker with flags for telephone input
 * show/hide password toggle
 * form validation
-* LocalStorage.setItem/localStorage.getItem for form data
 * JSDoc
 
 ----
