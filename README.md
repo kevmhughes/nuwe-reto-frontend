@@ -23,9 +23,8 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 ## Things to do:
 Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. 
 
-#### Debajo se detalla un desglose de tareas pendientes:
+#### Debajo se pueden ver las tareas pendientes:
 
-* method to display icons on buttons in mobile view
 * Country picker for country input
 * International code picker with flags for telephone input
 * show/hide password toggle
