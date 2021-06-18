@@ -83,10 +83,10 @@ export class Main extends Component {
     render() {
       const { step } = this.state;
       const {
-        fullName, emailAddress, password, telephoneNumber, address, country, cardNumber, secretCode,
+        fullName, email, password, telephoneNumber, address, country, cardNumber, secretCode,
       } = this.state;
       const values = {
-        fullName, emailAddress, password, telephoneNumber, address, country, cardNumber, secretCode,
+        fullName, email, password, telephoneNumber, address, country, cardNumber, secretCode,
       };
 
       switch (step) {
