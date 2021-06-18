@@ -1,3 +1,4 @@
+/* eslint-disable react/no-deprecated */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable consistent-return */
 /* eslint-disable react/state-in-constructor */
@@ -12,7 +13,10 @@ import StepThree from './step-three';
 import StepFour from './step-four';
 
 export class Main extends Component {
-    state = {
+  constructor(props) {
+    super(props);
+
+    this.state = {
       step: 1,
       fullName: '',
       email: '',
@@ -23,9 +27,37 @@ export class Main extends Component {
       cardNumber: '',
       secretCode: '',
     };
+  }
 
-    // This was a frontend challenge.
-    // There is no axios method to connect with the backend yet!
+  componentDidMount() {
+    this.userData = JSON.parse(localStorage.getItem('user'));
+
+    if (localStorage.getItem('user')) {
+      this.setState({
+        step: this.userData.step,
+        fullName: this.userData.fullName,
+        email: this.userData.email,
+        password: this.userData.password,
+        telephoneNumber: this.userData.telephoneNumber,
+        address: this.userData.address,
+        country: this.userData.country,
+      });
+    } else {
+      this.setState({
+        step: 1,
+        fullName: '',
+        email: '',
+        password: '',
+        telephoneNumber: '',
+        address: '',
+        country: '',
+      });
+    }
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem('user', JSON.stringify(nextState));
+  }
 
     // Go to next step
     nextStep = () => {
