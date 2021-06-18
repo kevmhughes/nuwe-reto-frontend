@@ -69,7 +69,6 @@ export class StepThree extends Component {
                     onChange={handleChange('telephoneNumber')}
                   />
                 </Form.Group>
-
                 <Form.Group controlId="address">
                   <Form.Label>Dirección</Form.Label>
                   <Form.Control
@@ -81,7 +80,6 @@ export class StepThree extends Component {
                     onChange={handleChange('address')}
                   />
                 </Form.Group>
-
                 <Form.Group controlId="country">
                   <Form.Label>País de residencia</Form.Label>
                   <Form.Control

@@ -135,6 +135,7 @@ text-decoration: none;
   border-color: #408439;
   border-style: solid;
   border-width: thin;
+  border-radius: 10%;
 }
 
 .square-two {
@@ -144,6 +145,7 @@ text-decoration: none;
   background-color: #408439;
   border-style: solid;
   border-width: thin;
+  border-radius: 10%;
 }
 
 .briefcase {

@@ -141,7 +141,6 @@ export class StepTwo extends Component {
                   Registrate con Google
                 </Button>
                 <br />
-
               </Form>
             </Col>
           </Row>
