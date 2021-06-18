@@ -25,7 +25,6 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 
 #### Debajo se pueden ver las tareas pendientes:
 
-* method to display icons on buttons in mobile view
 * Country picker for country input
 * International code picker with flags for telephone input
 * show/hide password toggle
