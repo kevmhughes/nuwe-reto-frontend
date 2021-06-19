@@ -27,7 +27,6 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 
 * Country picker for country input
 * International code picker with flags for telephone input
-* show/hide password toggle
 * form validation
 * JSDoc
 
