@@ -40,6 +40,11 @@
   border-color: lightgrey
 }
 
+.button-right {
+  position: relative;
+  bottom: 5px;
+}
+
 .step-one-star {
   width: 40%;
 }
