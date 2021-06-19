@@ -97,7 +97,7 @@ export class StepOne extends Component {
             >
               <div className="step-one-star">
                 <FontAwesomeIcon icon={faSquare} className={btnClassSix} />
-                <FontAwesomeIcon icon={faUser} className="user" />
+                <FontAwesomeIcon icon={faBriefcase} className="briefcase" />
               </div>
               <div className="button-right">
                 <p className="step-one-button-text">Business</p>
