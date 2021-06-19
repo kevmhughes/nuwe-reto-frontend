@@ -13,7 +13,7 @@ import {
   Row, Col, Form, Button,
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { SidePanel } from './side-panel';
 import './step-two.css';
 
@@ -22,8 +22,18 @@ export class StepTwo extends Component {
     super(props);
     this.state = {
       accept: true,
+      clicked: true,
+      eye: true,
     };
     this.checkboxHandler = this.checkboxHandler.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState((prevState) => ({
+      clicked: !prevState.clicked,
+      eye: !prevState.eye,
+    }));
   }
 
     continue = (e) => {
@@ -49,6 +59,9 @@ export class StepTwo extends Component {
 
     render() {
       const { values, handleChange } = this.props;
+      const btnClass = this.state.clicked ? 'password' : 'text';
+      const btnEye = this.state.eye ? faEye : faEyeSlash;
+      const btnEyeClass = this.state.eye ? 'eye' : 'eye-slash';
       return (
         <div className="step-two-view">
           <SidePanel />
@@ -61,7 +74,7 @@ export class StepTwo extends Component {
               </Col>
               <Col className="info-top">
                 <p style={{ marginBottom: 0 }}>Paso 01/03</p>
-                <p>Personal Info</p>
+                <p>Info Personal</p>
                 <br />
               </Col>
             </Row>
@@ -102,15 +115,19 @@ export class StepTwo extends Component {
 
                 <Form.Group controlId="password">
                   <Form.Label>Contraseña*</Form.Label>
+                  <span>
+                    <FontAwesomeIcon icon={btnEye} className={btnEyeClass} onClick={this.handleClick} />
+                  </span>
                   <Form.Control
                     className="step-two-input"
-                    type="password"
+                    type={btnClass}
                     size="sm"
                     placeholder="Introduzca una contraseña"
                     value={values.password}
                     onChange={handleChange('password')}
                   />
                 </Form.Group>
+
                 <label htmlFor="agree" id="agree">
                   <input type="checkbox" className="checkbox" id="checkbox" onChange={this.checkboxHandler} />
                   {' '}
