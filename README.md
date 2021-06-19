@@ -27,7 +27,7 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 
 * Country picker for country input
 * International code picker with flags for telephone input
-* form validation
+* client-side form validation
 * JSDoc
 
 ----
