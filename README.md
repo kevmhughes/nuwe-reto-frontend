@@ -29,6 +29,8 @@ I wasn´t able to fulfil 100% of the requisites on the day of the hackathon due 
 * International code picker with flags for telephone input
 * JSDoc
 
+----
+
 # Setting Up
 
 1) Clone this repository
