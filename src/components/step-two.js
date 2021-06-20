@@ -119,7 +119,7 @@ export class StepTwo extends Component {
                     value={values.fullName}
                     onChange={handleChange('fullName')}
                     minLength={5}
-                    pattern="[a-zA-Z]+"
+                    pattern="[a-zA-Z ]+"
                     required
                   />
                   <Form.Control.Feedback type="invalid">
