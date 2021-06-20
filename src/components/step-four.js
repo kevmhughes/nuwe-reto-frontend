@@ -46,9 +46,7 @@ export class StepFour extends Component {
     continue() {
       const regexNumbers = /^[0-9]*$/;
       if ((this.props.values.cardNumber.length >= 12 && this.props.values.cardNumber.match(regexNumbers)) && (this.props.values.secretCode.length >= 3 && this.props.values.secretCode.match(regexNumbers))) {
-        alert('hey');
-      } else {
-        alert('hey3333');
+        window.open('https://nuwe.io/login/user', '_self');
       }
     }
 
