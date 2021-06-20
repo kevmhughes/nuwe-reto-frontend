@@ -35,10 +35,14 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 
 2) cd nuwe-reto-frontend
 
-3) Install dependencies, and start the development server.
+3) Install dependencies
+
+`npm start`
+
+4) start the development server.
 
 `npm install`
-`npm start`
+
 
 ----
 # The Hackathon Challenge:
