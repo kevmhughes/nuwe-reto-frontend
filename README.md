@@ -27,8 +27,18 @@ Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales d
 
 * Country picker for country input
 * International code picker with flags for telephone input
-* client-side form validation
 * JSDoc
+
+# Setting Up
+
+1) Clone this repository
+
+2) cd nuwe-reto-frontend
+
+3) Install dependencies, and start the development server.
+
+`npm install`
+`npm start`
 
 ----
 # The Hackathon Challenge:
