@@ -21,9 +21,9 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 * Github Pages
 
 ## Things to do:
-Sólo pude dedicarle unas horas a la hackathon debido a compromisos personales durante el día del hackathon, y así que no pude terminar el reto por completo. 
+I wasn´t able to fulfill 100% of the requisites on the day of the hackathon due to personal commitments, and only being able to dedicate several hours to the challenge. 
 
-#### Tareas pendientes:
+#### Pending tasks:
 
 * Country picker for country input
 * International code picker with flags for telephone input
