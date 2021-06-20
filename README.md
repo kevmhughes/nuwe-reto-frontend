@@ -1,11 +1,11 @@
 # Nuwe Hackathon - 12/06/2021
 
-## My Submission for the Frontend Challenge:
+## My Submission for the Frontend Challenge
 
-### Objective:
+### Objective
 Use React to build and style the UI for a 4-step registration form with client-side form validation. 
 
-### See Live App Here:
+### See Live App Here
 https://kevmhughes.github.io/nuwe-reto-frontend/
 
 ### Tech Stack
@@ -20,8 +20,8 @@ https://kevmhughes.github.io/nuwe-reto-frontend/
 ### Deployment
 * Github Pages
 
-## Things to do:
-I wasn´t able to fulfill 100% of the requisites on the day of the hackathon due to personal commitments, and only being able to dedicate several hours to the challenge. 
+## Things to do
+I wasn´t able to fulfil 100% of the requisites on the day of the hackathon due to personal commitments, and only being able to dedicate several hours to the challenge. 
 
 #### Pending tasks:
 
