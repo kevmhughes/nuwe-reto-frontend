@@ -42,7 +42,8 @@ export class StepThree extends Component {
     }
 
     continue() {
-      if (this.props.values.telephoneNumber.length >= 1 && this.props.values.address.length >= 1 && this.props.values.country.length >= 1) {
+      const regexNumbers = /^[0-9]*$/;
+      if ((this.props.values.telephoneNumber.length >= 6 && this.props.values.telephoneNumber.match(regexNumbers)) && this.props.values.address.length >= 1 && this.props.values.country.length >= 1) {
         this.props.nextStep();
       }
     }
@@ -92,6 +93,8 @@ export class StepThree extends Component {
                     placeholder="Introduzca el número de teléfono"
                     value={values.telephoneNumber}
                     onChange={handleChange('telephoneNumber')}
+                    minLength={6}
+                    pattern="[0-9]+"
                     required
                   />
                   <Form.Control.Feedback type="invalid">
@@ -122,6 +125,7 @@ export class StepThree extends Component {
                     placeholder="Selecciona uno"
                     value={values.country}
                     onChange={handleChange('country')}
+                    pattern="[a-zA-Z]+"
                     required
                   />
                   <Form.Control.Feedback type="invalid">

@@ -92,6 +92,7 @@ export class StepFour extends Component {
                     value={values.cardNumber}
                     onChange={handleChange('cardNumber')}
                     minLength={12}
+                    pattern="[0-9]+"
                     required
                   />
                   <Form.Control.Feedback type="invalid">
@@ -109,6 +110,7 @@ export class StepFour extends Component {
                     value={values.secretCode}
                     onChange={handleChange('secretCode')}
                     minLength={3}
+                    pattern="[0-9]+"
                     required
                   />
                   <Form.Control.Feedback type="invalid">

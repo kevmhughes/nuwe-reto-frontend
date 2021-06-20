@@ -118,8 +118,9 @@ export class StepTwo extends Component {
                     placeholder="Introduzca el nombre completo"
                     value={values.fullName}
                     onChange={handleChange('fullName')}
-                    required
                     minLength={5}
+                    pattern="[a-zA-Z]+"
+                    required
                   />
                   <Form.Control.Feedback type="invalid">
                     Debe contener un mínimo de 5 caracteres.
@@ -154,8 +155,8 @@ export class StepTwo extends Component {
                     placeholder="Introduzca una contraseña"
                     value={values.password}
                     onChange={handleChange('password')}
-                    required
                     minLength={8}
+                    required
                   />
                   <Form.Control.Feedback type="invalid">
                     Debe contener un mínimo de 8 caracteres.
