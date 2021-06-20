@@ -33,7 +33,7 @@ I wasn´t able to fulfill 100% of the requisites on the day of the hackathon due
 
 1) Clone this repository
 
-2) cd nuwe-reto-frontend
+2) cd nuwe-reto-frontend-master
 
 3) Install dependencies
 
