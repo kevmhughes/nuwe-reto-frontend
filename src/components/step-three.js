@@ -98,7 +98,7 @@ export class StepThree extends Component {
                     required
                   />
                   <Form.Control.Feedback type="invalid">
-                    Hay que rellenar este campo.
+                    Debe contener un mínimo de 6 números.
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="address">
