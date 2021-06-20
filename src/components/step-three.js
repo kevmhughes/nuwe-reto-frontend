@@ -16,14 +16,35 @@ import { SidePanel } from './side-panel';
 import './step-two.css';
 
 export class StepThree extends Component {
-    continue = (e) => {
-      e.preventDefault();
-      this.props.nextStep();
+  constructor(props) {
+    super(props);
+    this.state = {
+      validated: false,
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    // handles form validation
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.stopPropagation();
+    } else {
+      this.setState({ validated: true });
     }
+    this.continue();
+  }
 
     back = (e) => {
       e.preventDefault();
       this.props.prevStep();
+    }
+
+    continue() {
+      if (this.props.values.telephoneNumber.length >= 1 && this.props.values.address.length >= 1 && this.props.values.country.length >= 1) {
+        this.props.nextStep();
+      }
     }
 
     render() {
@@ -57,45 +78,62 @@ export class StepThree extends Component {
             <hr className="horiz-line" />
 
             <Col className="step-two-container">
-              <Form>
+              <Form
+                noValidate
+                validated={this.state.validated}
+                onSubmit={this.handleSubmit}
+              >
                 <Form.Group controlId="telephone">
                   <Form.Label>Número de teléfono</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="telephone"
+                    type="tel"
                     size="sm"
                     placeholder="Introduzca el número de teléfono"
                     value={values.telephoneNumber}
                     onChange={handleChange('telephoneNumber')}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Hay que rellenar este campo.
+                  </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="address">
                   <Form.Label>Dirección</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="address"
+                    type="text"
                     size="sm"
                     placeholder="Introduzca la dirección completa"
                     value={values.address}
                     onChange={handleChange('address')}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Hay que rellenar este campo.
+                  </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="country">
                   <Form.Label>País de residencia</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="country"
+                    type="text"
                     size="sm"
                     placeholder="Selecciona uno"
                     value={values.country}
                     onChange={handleChange('country')}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Hay que rellenar este campo.
+                  </Form.Control.Feedback>
                 </Form.Group>
                 <br />
                 <Button
                   className="step-two-button"
                   variant="primary"
-                  onClick={this.continue}
+                  type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
                 >
                   Guardar y continuar
                 </Button>

@@ -18,19 +18,38 @@ import { SidePanel } from './side-panel';
 import './step-two.css';
 
 export class StepFour extends Component {
-    continue = (e) => {
-      e.preventDefault();
-      this.props.nextStep();
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      validated: false,
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    vamosParaNuwe = (e) => {
-      e.preventDefault();
-      alert('Te has registrado correctamente');
+  handleSubmit(e) {
+    e.preventDefault();
+    // handles form validation
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.stopPropagation();
+    } else {
+      this.setState({ validated: true });
     }
+    this.continue();
+  }
 
     back = (e) => {
       e.preventDefault();
       this.props.prevStep();
+    }
+
+    continue() {
+      const regexNumbers = /^[0-9]*$/;
+      if ((this.props.values.cardNumber.length >= 12 && this.props.values.cardNumber.match(regexNumbers)) && (this.props.values.secretCode.length >= 3 && this.props.values.secretCode.match(regexNumbers))) {
+        alert('hey');
+      } else {
+        alert('hey3333');
+      }
     }
 
     render() {
@@ -60,35 +79,50 @@ export class StepFour extends Component {
             </Row>
             <hr className="horiz-line" />
             <Col className="step-two-container">
-              <Form>
+              <Form
+                noValidate
+                validated={this.state.validated}
+                onSubmit={this.handleSubmit}
+              >
                 <Form.Group controlId="card-number">
                   <Form.Label>Número de tarjeta</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="card-number"
+                    type="text"
                     size="sm"
                     placeholder="Introduzca el número de tarjeta"
                     value={values.cardNumber}
                     onChange={handleChange('cardNumber')}
+                    minLength={12}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Debe contener un mínimo de 12 números.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group controlId="secret-number">
                   <Form.Label>Código secreto</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="secret-number"
+                    type="text"
                     size="sm"
                     placeholder="Introduzca el codigo secreto"
                     value={values.secretCode}
                     onChange={handleChange('secretCode')}
+                    minLength={3}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Debe contener un mínimo de 3 números.
+                  </Form.Control.Feedback>
                 </Form.Group>
                 <br />
                 <Button
                   className="step-two-button"
                   variant="primary"
-                  onClick={this.vamosParaNuwe}
+                  type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
                 >
                   Crear Cuenta
                 </Button>

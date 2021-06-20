@@ -106,13 +106,13 @@ export class StepOne extends Component {
             </Button>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
               <p className="step-one-text-two">Ya tienes cuenta?</p>
-              <a className="initiate-link">inicia sesión</a>
+              <a href="https://nuwe.io/login/user" className="initiate-link">inicia sesión</a>
             </div>
           </div>
           <div className="panel-right-desktop">
             <div className="link-right">
               <p className="step-one-text-two">¿Ya tienes cuenta?</p>
-              <a className="initiate-link">inicia sesión</a>
+              <a href="https://nuwe.io/login/user" className="initiate-link">inicia sesión</a>
             </div>
             <div className="action-box">
               <h1 id="title">¡Únete a la comunidad!</h1>

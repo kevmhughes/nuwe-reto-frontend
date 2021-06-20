@@ -24,9 +24,23 @@ export class StepTwo extends Component {
       accept: true,
       clicked: true,
       eye: true,
+      validated: false,
     };
     this.checkboxHandler = this.checkboxHandler.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    // handles form validation
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.stopPropagation();
+    } else {
+      this.setState({ validated: true });
+    }
+    this.continue();
   }
 
   handleClick() {
@@ -36,19 +50,21 @@ export class StepTwo extends Component {
     }));
   }
 
-    continue = (e) => {
-      e.preventDefault();
-      this.props.nextStep();
-    }
-
     goToNuwe = (e) => {
       e.preventDefault();
-      alert('Te has registrado correctamente');
+      alert('haciendo click aquí te llevaría al OAuth');
     }
 
     back = (e) => {
       e.preventDefault();
       this.props.prevStep();
+    }
+
+    continue() {
+      const regex = /(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
+      if (this.props.values.fullName.length >= 5 && this.props.values.password.length >= 8 && this.props.values.email.match(regex)) {
+        this.props.nextStep();
+      }
     }
 
     checkboxHandler() {
@@ -88,17 +104,26 @@ export class StepTwo extends Component {
             <hr className="horiz-line" />
 
             <Col className="step-two-container">
-              <Form>
+              <Form
+                noValidate
+                validated={this.state.validated}
+                onSubmit={this.handleSubmit}
+              >
                 <Form.Group controlId="fullname">
                   <Form.Label>Nombre completo*</Form.Label>
                   <Form.Control
                     className="step-two-input"
-                    type="username"
+                    type="text"
                     size="sm"
                     placeholder="Introduzca el nombre completo"
                     value={values.fullName}
                     onChange={handleChange('fullName')}
+                    required
+                    minLength={5}
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Debe contener un mínimo de 5 caracteres.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group controlId="email">
@@ -110,7 +135,11 @@ export class StepTwo extends Component {
                     placeholder="Introduzca el email"
                     value={values.email}
                     onChange={handleChange('email')}
+                    required
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Utiliza un correo electrónico valido.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group controlId="password">
@@ -125,7 +154,12 @@ export class StepTwo extends Component {
                     placeholder="Introduzca una contraseña"
                     value={values.password}
                     onChange={handleChange('password')}
+                    required
+                    minLength={8}
                   />
+                  <Form.Control.Feedback type="invalid">
+                    Debe contener un mínimo de 8 caracteres.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <label htmlFor="agree" id="agree">
@@ -137,10 +171,11 @@ export class StepTwo extends Component {
                 <Button
                   className="step-two-button"
                   variant="primary"
-                  onClick={this.continue}
                   disabled={this.state.accept}
+                  type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
                 >
-                  Registrar Cuenta
+                  Registra Cuenta
                 </Button>
                 <br />
                 <br />
